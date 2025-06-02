@@ -9,22 +9,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-	title: "Luxury Cars - Coming Soon",
+	title: "KVLimo Services - Coming Soon",
 	description: "Experience the future of luxury automotive. Premium vehicles coming soon.",
 	keywords: ["luxury cars", "premium vehicles", "automotive", "coming soon"],
-	authors: [{ name: "Car Showcase" }],
+	authors: [{ name: "KVLimo" }],
 	viewport: "width=device-width, initial-scale=1",
 	robots: "index, follow",
 	openGraph: {
-		title: "Luxury Cars - Coming Soon",
+		title: "KVLimo Services - Coming Soon",
 		description: "Experience the future of luxury automotive. Premium vehicles coming soon.",
 		type: "website",
-		siteName: "Car Showcase",
+		siteName: "KVLimo",
+		images: ["https://kvlimo.vercel.app/KVLimo.png"],
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Luxury Cars - Coming Soon",
-		description: "Experience the future of luxury automotive. Premium vehicles coming soon.",
+		title: "KVLimo Services - Coming Soon",
+    description: "Experience the future of luxury automotive. Premium vehicles coming soon.",
+    images: ["https://kvlimo.vercel.app/KVLimo.png"],
 	},
 };
 

@@ -97,7 +97,7 @@ export default function Home() {
 					}`}>
 					<p className="text-sm sm:text-base text-gray-200 font-light tracking-widest">
 						{/* LUXURY • PERFORMANCE • INNOVATION */}
-						Contact Number : +1 9299286022
+						Contact Number : +1 (929) 928-6022
 					</p>
 				</div>
 			</div>
