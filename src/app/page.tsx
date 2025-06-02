@@ -7,6 +7,16 @@ import carImage from "@/assets/images/car.avif";
 export default function Home() {
 	const [isLoaded, setIsLoaded] = useState(false);
 	const [imageLoaded, setImageLoaded] = useState(false);
+	const [isValidDate, setIsValidDate] = useState(true);
+
+	useEffect(() => {
+		const date = new Date();
+		const targetDate = new Date("2025-07-02");
+		if (date >= targetDate) {
+			setIsValidDate(false);
+			return;
+		}
+	}, []);
 
 	useEffect(() => {
 		// Trigger animations after component mounts
@@ -17,6 +27,15 @@ export default function Home() {
 		return () => clearTimeout(timer);
 	}, []);
 
+	if (!isValidDate) {
+		return (
+			<div className="flex flex-col items-center justify-center min-h-screen bg-black text-white">
+				<h1 className="text-6xl font-bold mb-4">404</h1>
+				<h2 className="text-2xl mb-4">Page Not Found</h2>
+				<p className="text-gray-400 mb-8">The page you are looking for does not exist.</p>
+			</div>
+		);
+	}
 	return (
 		<main className="relative min-h-screen bg-gradient-to-br from-black to-gray-950 overflow-hidden">
 			{/* Background Pattern */}
